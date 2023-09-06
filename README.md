@@ -37,6 +37,9 @@ This README provides my step by step process to create, compile, deploy, and int
 
 2. Test deposit functionality:
    - Send 1 ether as wei (Transaction 1)
+   ![](Execution_Results/account1Withdrawal.png)
+
+   - 
    - Send 10 ether as wei (Transaction 2)
    - Send 5 ether (Transaction 3)
    After each transaction, verify the updated `contractBalance`.
