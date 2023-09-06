@@ -15,13 +15,13 @@ This README provides my step by step process to create, compile, deploy, and int
    - `uint public lastWithdrawAmount`
    - `uint public contractBalance`
 
-3. Define the `withdraw` function:
+3. Define the `withdraw` function.
 
-4. Define the `deposit` function:
+4. Define the `deposit` function.
 
-5. Define the `setAccounts` function:
+5. Define the `setAccounts` function.
 
-6. Add a fallback function to receive ether:
+6. Add a fallback function to receive ether.
 
 ## Step 2: Compile and Deploy Your Contract in the JavaScript VM
 
@@ -35,16 +35,21 @@ This README provides my step by step process to create, compile, deploy, and int
 
 1. Set authorized Ethereum addresses using the `setAccounts` function.
 
+![](SetAccountsFunction.png)
+
 2. Test deposit functionality:
    - Send 1 ether as wei (Transaction 1)
-   ![](Execution_Results/account1Withdrawal.png)
+![](Transaction1.png)
 
-   - 
    - Send 10 ether as wei (Transaction 2)
+![](Transaction2.png)
    - Send 5 ether (Transaction 3)
-   After each transaction, verify the updated `contractBalance`.
+![](Transaction3.png)
 
 3. Test withdrawal functionality:
    - Withdraw 5 ether into `accountOne`.
+![](account1Withdrawal.png)
    - Withdraw 10 ether into `accountTwo`.
-   After each withdrawal, use the `contractBalance`, `lastToWithdraw`, and `lastWithdrawAmount` functions to verify results.
+![](account2Withdrawal.png)
+   - After each withdrawal, use the `contractBalance`, `lastToWithdraw`, and `lastWithdrawAmount` functions to verify results.
+![](ConfirmWithdrawal.png)
